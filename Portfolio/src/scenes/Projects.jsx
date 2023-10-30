@@ -20,21 +20,33 @@ const projectVariant = {
 const Project = ({ title, link, image}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-neutral z-30 flex flex-col justify-center items-center text-center p-16 text-base-100`;
+  const projectButtons = 'flex-col justify-around w-full p-2';
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative max-w-[400px] max-h-[400px]">
       <div className={overlayStyles}>
         <p className="text-xl font-playfair">{title}</p>
+        <div className={projectButtons}>
         <a 
           href={link}
           target="_blank" 
           rel="noreferrer"
          >
-          <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-white py-2 px-4 border border-primary hover:border-transparent rounded m-auto">
-            Visit the App
+          <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-white py-2 px-4 border border-primary hover:border-transparent rounded">
+            App
           </button>
         </a>
+        <a 
+          href={link}
+          target="_blank" 
+          rel="noreferrer"
+         >
+          <button className="bg-transparent hover:bg-secondary text-secondary font-semibold hover:text-white py-2 px-4 border border-secondary hover:border-transparent rounded">
+            App
+          </button>
+        </a>
+        </div>
       </div>
       <img src={image} alt={projectTitle} />
     </motion.div>
