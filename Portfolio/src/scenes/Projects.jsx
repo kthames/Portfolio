@@ -16,11 +16,10 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-
-const Project = ({ title, link, image}) => {
+const Project = ({ title, linkD, linkG, image}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-neutral z-30 flex flex-col justify-center items-center text-center p-16 text-base-100`;
-  const projectButtons = 'flex-col justify-around w-full p-2';
+  const projectButtons = `flex justify-around w-full p-2 mt-2`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
@@ -29,7 +28,7 @@ const Project = ({ title, link, image}) => {
         <p className="text-xl font-playfair">{title}</p>
         <div className={projectButtons}>
         <a 
-          href={link}
+          href={linkD}
           target="_blank" 
           rel="noreferrer"
          >
@@ -38,12 +37,12 @@ const Project = ({ title, link, image}) => {
           </button>
         </a>
         <a 
-          href={link}
+          href={linkG}
           target="_blank" 
           rel="noreferrer"
          >
           <button className="bg-transparent hover:bg-secondary text-secondary font-semibold hover:text-white py-2 px-4 border border-secondary hover:border-transparent rounded">
-            App
+            GitHub
           </button>
         </a>
         </div>
@@ -91,19 +90,19 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <Project title="Stock Trader" link="https://floating-wildwood-52719-0a69bbab7cea.herokuapp.com/login" image={stocktrader}/>
-          <Project title="Ublog" link="https://ublog-50a16cea80fc.herokuapp.com/" image={ublog}/>
-          <Project title="Hype Radar" link="https://github.com/fabioesilveira/hype-radar" image={hyperadar}/>
+          <Project title="Stock Trader" linkD="https://floating-wildwood-52719-0a69bbab7cea.herokuapp.com/login" linkG="https://github.com/Fy50167/stock-trader" image={stocktrader}/>
+          <Project title="Ublog" linkD="https://ublog-50a16cea80fc.herokuapp.com/" linkG="https://github.com/kthames/Blog" image={ublog}/>
+          <Project title="Hype Radar" linkD="https://github.com/fabioesilveira/hype-radar" linkG="https://github.com/fabioesilveira/hype-radar" image={hyperadar}/>
 
 
           {/* ROW 2 */}
-          <Project title="Work Day Scheduler" link="https://kthames.github.io/WorkDayScheduler/" image={workdayscheduler}/>
-          <Project title="Weather Forecast" link="https://kthames.github.io/WeatherForecast/" image={weatherforecast}/>
-          <Project title="Java Quiz" link="https://kthames.github.io/JavaScriptQuiz/" image={javaquiz}/>
+          <Project title="Work Day Scheduler" linkD="https://kthames.github.io/WorkDayScheduler/" linkG="https://github.com/kthames/WorkDayScheduler" image={workdayscheduler}/>
+          <Project title="Weather Forecast" linkD="https://kthames.github.io/WeatherForecast/" linkG="https://github.com/kthames/WeatherForecast" image={weatherforecast}/>
+          <Project title="Java Quiz" linkD="https://kthames.github.io/JavaScriptQuiz/" linkG="https://github.com/kthames/JavaScriptQuiz" image={javaquiz}/>
 
           {/* ROW 3 */}
-          <Project title="Password Generator" link ="https://kthames.github.io/PasswordGenerator/" image={passwordgenerator}/>
-          <Project title="Note Taker" link="https://kthames.github.io/NoteTaker/" image={notetaker}/>
+          <Project title="Password Generator" linkD ="https://kthames.github.io/PasswordGenerator/" linkG="https://github.com/kthames/PasswordGenerator" image={passwordgenerator}/>
+          <Project title="Note Taker" linkD="https://kthames.github.io/NoteTaker/" linkG = "https://github.com/kthames/NoteTaker" image={notetaker}/>
           <div
             className="flex justify-center text-center items-center p-10 bg-primary
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"

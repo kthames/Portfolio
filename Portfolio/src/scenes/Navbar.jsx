@@ -25,8 +25,8 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
     const navbarBackground = isTopOfPage ? "" : "bg-gradient-rainblue";
 
     return (
-        <nav className = {`${navbarBackground} z-40 w-full fixed top-0 py-6`}> 
-            <div className="flex items-center justify-between mx-auto w-5/6">
+        <nav className = {`${navbarBackground} z-40 w-full fixed top-0 py-3 mb-4`}> 
+            <div className="flex items-center justify-between mx-auto pb-4 w-5/6">
              <h4 className="font-playfair text-3xl font-bold">KT</h4>
 
                 {/*DESKTOP NAV */}
@@ -54,7 +54,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                         />
                     </div>
                 ) : (
-                    <button className = "rounded-full bg-secondary p-2"
+                    <button className = "rounded-full bg-secondary p-2 mt-2"
                     onClick={() => setIsMenuToggled(!isMenuToggled)}>
                         <img alt="menu-icon" src={menuIcon}></img>
                     </button>

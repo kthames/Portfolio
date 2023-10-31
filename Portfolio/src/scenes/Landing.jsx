@@ -22,7 +22,7 @@ return (
                 before:w-full before:max-w-[400px] md:before:max-w-[400px] before:h-full before:border-2 before:border-accent before:z-[-1]">
                    <img
                         alt="profile"
-                        className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+                        className="brightness-90 hover:filter-none transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
                         src= {avatar}
                     />
 
@@ -59,8 +59,8 @@ return (
 
             <p className="mt-10 mb-7 text-sm text-center md:text-start">
             I love receiving new information and altering my view on the world because of it. When I was in elementary school, I hated it because there always seemed to be a wall at the end of my learning or there was a teacher who wasn't taking me seriously as a student and that feeling continued until I got to college. I didn't have a plan on what I wanted to do but I knew that I could learn so much if I pursued engineering. 
-As I started Biomedical Engineering at the University of Texas at Dallas, I was overwhelmed with so much information but the feeling of understanding topics that I had previously never seen before was extremely fulfilling. I was in complete awe of my professors who held far more education and wisdom than I did and they inspired me so much to continue to learn. When I graduated from college, I wasn't able to stay at one job for long due to moving between California and Texas, but during my time as a Data Coordinator at Medpace and an Infusion Device Repair Technician and BD I was still able to learn so much. Not just from the job itself but from my colleagues as well. 
-In the beginning of 2023, and after another move, I found myself unemployed and itching to find myself another learning environment to immerse myself in. I decided that I should pursue coding, as I reflected on the classes and projects that I had enjoyed the most during college. I began to pursue a certificate in Full Stack Web Development from the University of California Berkeley. I now truly feel like I am on the right path towards finding a career in software development and towards a future of continuous learning.
+            I love receiving new information and altering my view on the world because of it. When I was in elementary school, I hated it because there always seemed to be a wall at the end of my learning or there was a teacher who wasn't taking me seriously as a student and that feeling continued until I got to college. I didn't have a plan on what I wanted to do but I knew that I could learn so much if I pursued engineering. 
+
             </p>
             </motion.div>
 
