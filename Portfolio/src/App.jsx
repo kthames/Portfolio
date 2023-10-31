@@ -5,6 +5,7 @@ import MySkills from "./scenes/MySkills";
 import LineGradient from "./components/LineGradient";
 import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
+import Resume from "./scenes/Resume";
 import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
@@ -67,6 +68,16 @@ function App() {
           onViewportEnter={() => setSelectedPage("projects")}
         >
           <Projects />
+        </motion.div>
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("resume")}
+        >
+          <Resume />
         </motion.div>
       </div>
       <LineGradient />
