@@ -2,8 +2,13 @@ import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { resume } from "../assets";
+import AllPages from "../components/AllPages";
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+
 
 const Resume = () => {
+
   // Function will execute on click of button
   const onButtonClick = () => {
      
@@ -49,22 +54,15 @@ const Resume = () => {
       </motion.div>
 
       {/* RESUME PAGE */}
-      <div className="md:flex gap-16 mt-5 justify-center">
-
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
+      <div className="flex justify-evenly w-full mt-2">
+          <div className="flex w-1/2">
+            <AllPages pdf={resume} />
+          </div>  
+      </div>
+      <div className="flex justify-evenly w-full mt-4">
           <button className="bg-transparent hover:bg-secondary text-secondary font-semibold hover:text-white py-2 px-4 border border-secondary hover:border-transparent rounded" onClick={onButtonClick}>
-            Download PDF
+                Download PDF
           </button>
-        </motion.div>
       </div>
     </section>
   );
