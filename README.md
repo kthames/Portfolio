@@ -2,7 +2,7 @@
 
 [View my portfolio here!](https://lucky-custard-87d730.netlify.app/)
 
-![Portfolio](./PortfolioSS.png);
+![Portfolio](./PortfolioSS.png)
 
 ## How It's Made:
 
