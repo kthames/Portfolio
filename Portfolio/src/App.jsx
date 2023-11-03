@@ -7,7 +7,9 @@ import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
 import Resume from "./scenes/Resume";
 import Footer from "./scenes/Footer";
+
 import useMediaQuery from "./hooks/useMediaQuery";
+
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -61,7 +63,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -71,7 +73,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"

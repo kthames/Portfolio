@@ -33,26 +33,31 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                 {isAboveSmallScreens ? (
                     <div className="flex justify-between gap-16 font-playfair text-md font-semibold">
                         <Link
+                            to="/"
                             page="Home"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
                         <Link
+                            to="/Skills"
                             page="Skills"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
                         <Link
+                            to="/Projects"
                             page="Projects"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
                         <Link
+                            to="/Resume"
                             page="Resume"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
                         <Link
+                            to="/Contact"
                             page="Contact"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}

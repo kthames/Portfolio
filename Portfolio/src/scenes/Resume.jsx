@@ -55,7 +55,7 @@ const Resume = () => {
 
       {/* RESUME PAGE */}
       <div className="flex justify-evenly w-full mt-2">
-          <div className="flex w-1/2">
+          <div className="flex">
             <AllPages pdf={resume} />
           </div>  
       </div>

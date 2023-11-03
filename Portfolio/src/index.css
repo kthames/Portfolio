@@ -8,3 +8,10 @@ html, body, #root, .app {
     background-color: #807ad3;
     @apply text-white;
 }
+
+.react-pdf__Document {
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -58,9 +58,7 @@ return (
             </p>
 
             <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            I love receiving new information and altering my view on the world because of it. When I was in elementary school, I hated it because there always seemed to be a wall at the end of my learning or there was a teacher who wasn't taking me seriously as a student and that feeling continued until I got to college. I didn't have a plan on what I wanted to do but I knew that I could learn so much if I pursued engineering. 
-            I love receiving new information and altering my view on the world because of it. When I was in elementary school, I hated it because there always seemed to be a wall at the end of my learning or there was a teacher who wasn't taking me seriously as a student and that feeling continued until I got to college. I didn't have a plan on what I wanted to do but I knew that I could learn so much if I pursued engineering. 
-
+            Welcome to my portfolio! I am a fullstack developer currently looking for employment within a company that strives for quality and providing healthcare to the public. I enjoy working in a fast paced enviornment, learning new coding skills and developing projects within a hard-working team. From my Bachelors of Science in Biomedical Engineering to my Full Stack Web Development Certificate from the University of California, Berkeley I am very proud of all that I have accomplished and I cannot wait to start my career in software development and continue learning all that I can. 
             </p>
             </motion.div>
 
