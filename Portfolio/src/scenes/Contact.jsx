@@ -96,7 +96,7 @@ const Contact = () => {
             <textarea
               className="w-full bg-primary font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
-              placeholder="MESSAGE"
+              placeholder="MESSAGES ARE SENT TO K.THAMES@ME.COM"
               rows="4"
               cols="50"
               {...register("message", {

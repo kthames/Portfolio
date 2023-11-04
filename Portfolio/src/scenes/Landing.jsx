@@ -58,7 +58,7 @@ return (
             </p>
 
             <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Welcome to my portfolio! I am a fullstack developer currently looking for employment within a company that strives for quality and providing healthcare to the public. I enjoy working in a fast paced enviornment, learning new coding skills and developing projects within a hard-working team. From my Bachelors of Science in Biomedical Engineering to my Full Stack Web Development Certificate from the University of California, Berkeley I am very proud of all that I have accomplished and I cannot wait to start my career in software development and continue learning all that I can. 
+            Welcome to my portfolio, I am a fullstack developer currently looking for employment within a company that strives for quality and providing healthcare to the public. I enjoy working in a fast paced enviornment, learning new coding skills and developing projects within a hard-working team. Aside from my interests in software development and biomedical engineering, I enjoy CrossFit, digital art and spending time with my dogs. I am very proud of all that I have accomplished and I cannot wait to start my career in software development to continue learning all that I can.  
             </p>
             </motion.div>
 

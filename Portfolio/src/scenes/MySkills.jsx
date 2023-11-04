@@ -39,10 +39,10 @@ const MySkills = () => {
         </div>
       </motion.div>
 
-      {/* PROJECTS */}
-      <div className="flex justify-center">
+      {/* SKILLS */}
+      <div className="flex justify-center mt-10">
         <motion.div
-          className="sm:grid sm:grid-cols-5"
+          className="lg:grid lg:grid-cols-5 md:grid md:grid-cols-5 sm:grid sm:grid-cols-3"
           variants={container}
           initial="hidden"
           whileInView="visible"
@@ -176,7 +176,6 @@ const MySkills = () => {
             <img alt="tailwind-link" src={tailwind} />
           </a>
         </motion.div>
-        
       </div>
     </section>
   );

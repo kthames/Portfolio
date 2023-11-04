@@ -1,6 +1,6 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import { stocktrader, passwordgenerator, hyperadar, javaquiz, ublog, workdayscheduler, notetaker, weatherforecast, github } from "../assets";
+import { stocktrader, passwordgenerator, hyperadar, javaquiz, ublog, workdayscheduler, jate, weatherforecast, github } from "../assets";
 
 const container = {
   hidden: {},
@@ -19,7 +19,7 @@ const projectVariant = {
 const Project = ({ title, linkD, linkG, image}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-neutral z-30 flex flex-col justify-center items-center text-center p-16 text-base-100`;
-  const projectButtons = `flex justify-around w-full p-2 mt-2`;
+  const projectButtons = `flex justify-around w-full md:w-3/4 p-2 mt-2`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
@@ -92,7 +92,7 @@ const Projects = () => {
           {/* ROW 1 */}
           <Project title="Stock Trader" linkD="https://floating-wildwood-52719-0a69bbab7cea.herokuapp.com/login" linkG="https://github.com/Fy50167/stock-trader" image={stocktrader}/>
           <Project title="Ublog" linkD="https://ublog-50a16cea80fc.herokuapp.com/" linkG="https://github.com/kthames/Blog" image={ublog}/>
-          <Project title="Hype Radar" linkD="https://github.com/fabioesilveira/hype-radar" linkG="https://github.com/fabioesilveira/hype-radar" image={hyperadar}/>
+          <Project title="Hype Radar" linkD="https://fabioesilveira.github.io/hype-radar/" linkG="https://github.com/fabioesilveira/hype-radar" image={hyperadar}/>
 
 
           {/* ROW 2 */}
@@ -102,7 +102,7 @@ const Projects = () => {
 
           {/* ROW 3 */}
           <Project title="Password Generator" linkD ="https://kthames.github.io/PasswordGenerator/" linkG="https://github.com/kthames/PasswordGenerator" image={passwordgenerator}/>
-          <Project title="Note Taker" linkD="https://kthames.github.io/NoteTaker/" linkG = "https://github.com/kthames/NoteTaker" image={notetaker}/>
+          <Project title="JATE" linkD="https://glacial-bastion-95249-d644ed8d4741.herokuapp.com/" linkG = "https://github.com/kthames/TextEditor" image={jate}/>
           <div
             className="flex justify-center text-center items-center p-10 bg-primary
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"

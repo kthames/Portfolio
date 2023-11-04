@@ -18,7 +18,7 @@ import matlab from "./matlab.png";
 import menuIcon from "./menu-icon.svg"; 
 import mongoDb from "./mongodb.png"; 
 import mySQL from "./mysql.png"; 
-import notetaker from "./note-taker.png";
+import jate from "./jate.png"
 import nodeJs from "./nodejs.png"; 
 import passwordgenerator from "./password-generator.png"; 
 import react from "./react.png"; 
@@ -29,4 +29,4 @@ import weatherforecast from "./weather-forecast.png";
 import workdayscheduler from "./work-day-scheduler.png"; 
 import resume from "./resume.pdf";
 
-export {avatar, api, bootstrap, closeIcon, css, expressjs, github, githubS, handlebars, heroku, hyperadar, html, instagram, javaquiz, javascript, linkedIn, matlab, menuIcon, mongoDb, mySQL, nodeJs, notetaker, passwordgenerator, react, stocktrader, tailwind, ublog, weatherforecast, workdayscheduler, resume}
+export {avatar, api, bootstrap, closeIcon, css, expressjs, github, githubS, handlebars, heroku, hyperadar, html, instagram, javaquiz, javascript, linkedIn, matlab, menuIcon, mongoDb, mySQL, nodeJs, jate, passwordgenerator, react, stocktrader, tailwind, ublog, weatherforecast, workdayscheduler, resume}

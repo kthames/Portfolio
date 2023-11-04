@@ -1,10 +1,13 @@
 import LineGradient from "../components/LineGradient";
-import { useForm } from "react-hook-form";
+
 import { motion } from "framer-motion";
 import { resume } from "../assets";
 import AllPages from "../components/AllPages";
+
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
+
+import useMediaQuery from "../hooks/useMediaQuery.jsx"
 
 
 const Resume = () => {
@@ -47,15 +50,16 @@ const Resume = () => {
           <p className="font-playfair font-semibold text-4xl">
             RESU<span className="text-accent">ME</span>
           </p>
-          <div className="flex md:justify-center my-5">
+          <div className="flex justify-center my-5">
             <LineGradient width="w-3/4" />
           </div>
         </div>
       </motion.div>
 
       {/* RESUME PAGE */}
+      
       <div className="flex justify-evenly w-full mt-2">
-          <div className="flex">
+          <div className="flex sm:display-none">
             <AllPages pdf={resume} />
           </div>  
       </div>
