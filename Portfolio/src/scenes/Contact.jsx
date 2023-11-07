@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="m-32 bg-primary py-10 px-6 rounded-lg drop-shadow-lg" >
+    <section id="contact" className="py-10 px-6" >
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -29,7 +29,7 @@ const Contact = () => {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className="flex justify-center w-full"
+        className="flex justify-center w-full mt-24"
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
@@ -53,7 +53,7 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="basis-1/2 md:mt-0"
+          className="basis-1/2 md:mt-0 py-10 px-20 bg-primary rounded-lg drop-shadow-lg"
         >
           <form
             target="_blank"

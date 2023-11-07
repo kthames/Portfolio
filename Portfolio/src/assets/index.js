@@ -28,5 +28,6 @@ import ublog from "./ublog.png";
 import weatherforecast from "./weather-forecast.png"; 
 import workdayscheduler from "./work-day-scheduler.png"; 
 import resume from "./resume.pdf";
+import name from "./name.png";
 
-export {avatar, api, bootstrap, closeIcon, css, expressjs, github, githubS, handlebars, heroku, hyperadar, html, instagram, javaquiz, javascript, linkedIn, matlab, menuIcon, mongoDb, mySQL, nodeJs, jate, passwordgenerator, react, stocktrader, tailwind, ublog, weatherforecast, workdayscheduler, resume}
+export {avatar, api, bootstrap, closeIcon, css, expressjs, github, githubS, handlebars, heroku, hyperadar, html, instagram, javaquiz, javascript, linkedIn, matlab, menuIcon, mongoDb, mySQL, nodeJs, jate, passwordgenerator, react, stocktrader, tailwind, ublog, weatherforecast, workdayscheduler, resume, name}

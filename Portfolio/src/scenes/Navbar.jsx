@@ -72,7 +72,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
 
                 {/* MOBILE MENU POPUP*/}
                 {!isAboveSmallScreens && isMenuToggled && (
-                    <div className="fixed right-0 bottom-0 h-full bg-accent w-[300px]">
+                    <div className="fixed right-0 bottom-0 h-full w-10/12 bg-accent">
                         {/* CLONE ICON */}
                         <div className = "flex justify-end p-12"> 
                             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>

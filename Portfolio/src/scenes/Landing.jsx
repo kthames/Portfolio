@@ -2,7 +2,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery"
 import { motion } from "framer-motion"
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import {avatar} from "../assets"
+import {avatar, name} from "../assets"
 
 const Landing = ({setSelectedPage}) => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)"); 
@@ -56,13 +56,15 @@ return (
                     visible: { opacity: 1, x: 0 },
                 }}
             >
-            <p className="text-4xl font-playfair z-10 text-center">
-                Katherine Thames{""}
-                {/* <span
-                className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-                before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
-                >Thames</span> */}
-            </p>
+            {/* <p className="text-4xl font-playfair z-10 text-center">
+                Katherine Thames
+            </p> */}
+            <img
+                  alt="name"
+                  className="z-10 w-full justify-center"
+                  src= {name}
+            />
+
 
             <p className="mt-10 mb-7 text-sm text-center">
             Welcome to my portfolio, I am a fullstack developer currently looking for employment within a company that strives for quality and providing healthcare to the public. I enjoy working in a fast paced enviornment, learning new coding skills and developing projects within a hard-working team. Aside from my interests in software development and biomedical engineering, I enjoy CrossFit, digital art and spending time with my dogs. I am very proud of all that I have accomplished and I cannot wait to start my career in software development to continue learning all that I can.  
