@@ -43,7 +43,11 @@ const MySkills = () => {
       <div className="flex justify-center mt-10">
         <motion.div
           className="lg:grid lg:grid-cols-5 md:grid md:grid-cols-5 sm:grid sm:grid-cols-3"
-          variants={container}
+          variants={{
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.75 }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}

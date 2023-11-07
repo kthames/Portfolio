@@ -23,7 +23,10 @@ const Project = ({ title, linkD, linkG, image}) => {
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={projectVariant} className="relative max-w-[400px] max-h-[400px]">
+    <motion.div 
+      variants={projectVariant} 
+      className="relative max-w-[400px] max-h-[400px]"
+    >
       <div className={overlayStyles}>
         <p className="text-xl font-playfair">{title}</p>
         <div className={projectButtons}>
@@ -116,8 +119,6 @@ const Projects = () => {
           >
             <img alt="github-link" src={github} className="max-w-[300px] max-h-[300px]" />
           </a>
-            
-
           </div>
         </motion.div>
       </div>

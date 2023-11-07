@@ -4,15 +4,25 @@ import { motion } from "framer-motion"
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import {avatar} from "../assets"
 
-
-
 const Landing = ({setSelectedPage}) => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)"); 
 
 return (
     <section id = "home" className="md:flex md:justify-between md:items-center md:h-full gap-16 py-8"> 
+
         {/* IMAGE SECTION */}
         <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+        <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                animate={{ x: 100 }}
+                transition={{ type: "spring", stiffness: 100 }}
+                variants={{
+                    hidden: { opacity: 0, x: 150 },
+                    visible: { opacity: 1, x: 0 },
+                }}
+            >
             {isAboveMediumScreens ? (
                 <div
                 className="relative z-0 ml-20 before:absolute before:-top-5 before:-left-5 
@@ -35,6 +45,7 @@ return (
                 src= {avatar}
                 />   
             )}
+            </motion.div>
         </div>
         {/* MAIN SECTION */}
         <div className="z-30 basis-2/5 mt-12 md:mt-32">
@@ -43,7 +54,8 @@ return (
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
+                animate={{ x: 100 }}
+                transition={{ type: "spring", stiffness: 100 }}
                 variants={{
                     hidden: { opacity: 0, x: -50 },
                     visible: { opacity: 1, x: 0 },
@@ -68,7 +80,8 @@ return (
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          animate={{ x: 100 }}
+          transition={{ type: "spring", stiffness: 100 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
@@ -97,7 +110,8 @@ return (
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
+          animate={{ x: 100 }}
+          transition={{ type: "spring", stiffness: 100 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
