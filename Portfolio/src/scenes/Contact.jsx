@@ -96,7 +96,7 @@ const Contact = () => {
             <textarea
               className="w-full bg-white font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
-              placeholder="MESSAGES ARE SENT TO K.THAMES@ME.COM"
+              placeholder="MESSAGE"
               rows="4"
               cols="50"
               {...register("message", {
@@ -114,10 +114,10 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-gradient-rainblue font-semibold text-deep-blue mt-5 hover:bg-error hover:text-neutral transition duration-500 rounded-md"
+              className="p-5 bg-gradient-rainblue w-full font-semibold text-deep-blue mt-5 hover:bg-error hover:text-neutral transition duration-500 rounded-md"
               type="submit"
             >
-              SEND ME A MESSAGE
+              SEND TO EMAIL: K.THAMES@ME.COM
             </button>
           </form>
         </motion.div>

@@ -25,8 +25,9 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
     const navbarBackground = isTopOfPage ? "" : "bg-gradient-rainblue";
 
     return (
-        <nav className = {`${navbarBackground} z-40 w-full fixed top-0 py-3 mb-4`}> 
-            <div className="flex items-center justify-between mx-auto pb-4 w-5/6">
+        <nav className = {`${navbarBackground} z-40 w-full sm:max-w-9/12 justify-center fixed top-0 py-3 mb-4`}> 
+            <div className="flex items-center justify-between px-5 m-0">
+            {/* <div className="flex items-center justify-between mx-auto pb-4 w-5/6"> */}
              <h4 className="font-playfair text-3xl font-bold">KT</h4>
 
                 {/*DESKTOP NAV */}
@@ -74,7 +75,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                 {!isAboveSmallScreens && isMenuToggled && (
                     <div className="fixed right-0 bottom-0 h-full w-10/12 bg-accent">
                         {/* CLONE ICON */}
-                        <div className = "flex justify-end p-12"> 
+                        <div className = "flex justify-end"> 
                             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
                                 <img alt="close-icon" src = {closeIcon}/>
                             </button>
