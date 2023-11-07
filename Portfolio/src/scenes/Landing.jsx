@@ -25,18 +25,13 @@ return (
             >
             {isAboveMediumScreens ? (
                 <div
-                className="relative z-0 ml-20 before:absolute before:-top-5 before:-left-5 
-                before:w-full before:max-w-[400px] md:before:max-w-[400px] before:h-full before:border-2 before:border-accent before:z-[-1]"
+                className="relative bg-primary m-auto p-10 rounded-lg drop-shadow-lg"
                 >
-                  <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-                before:w-full before:max-w-[400px] md:before:max-w-[400px] before:h-full before:border-2 before:border-accent before:z-[-1]">
                    <img
                         alt="profile"
                         className="brightness-90 hover:filter-none transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
                         src= {avatar}
                     />
-
-                  </div>
                 </div>
             ) : (
                 <img 
@@ -61,7 +56,7 @@ return (
                     visible: { opacity: 1, x: 0 },
                 }}
             >
-            <p className="text-4xl font-playfair z-10 text-center md:text-start">
+            <p className="text-4xl font-playfair z-10 text-center">
                 Katherine Thames{""}
                 {/* <span
                 className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
@@ -69,14 +64,14 @@ return (
                 >Thames</span> */}
             </p>
 
-            <p className="mt-10 mb-7 text-sm text-center md:text-start">
+            <p className="mt-10 mb-7 text-sm text-center">
             Welcome to my portfolio, I am a fullstack developer currently looking for employment within a company that strives for quality and providing healthcare to the public. I enjoy working in a fast paced enviornment, learning new coding skills and developing projects within a hard-working team. Aside from my interests in software development and biomedical engineering, I enjoy CrossFit, digital art and spending time with my dogs. I am very proud of all that I have accomplished and I cannot wait to start my career in software development to continue learning all that I can.  
             </p>
             </motion.div>
 
             {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 justify-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -106,7 +101,7 @@ return (
           </AnchorLink>
         </motion.div>
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 justify-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

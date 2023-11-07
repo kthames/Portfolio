@@ -106,9 +106,13 @@ const Projects = () => {
           {/* ROW 3 */}
           <Project title="Password Generator" linkD ="https://kthames.github.io/PasswordGenerator/" linkG="https://github.com/kthames/PasswordGenerator" image={passwordgenerator}/>
           <Project title="JATE" linkD="https://glacial-bastion-95249-d644ed8d4741.herokuapp.com/" linkG = "https://github.com/kthames/TextEditor" image={jate}/>
-          <div
-            className="flex justify-center text-center items-center p-10 bg-primary
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+          
+          <motion.div 
+            variants={projectVariant} 
+          >
+            <div
+            className="`absolute h-full w-full 
+            bg-accent font-playfair text-3xl flex flex-col justify-center items-center text-center p-16 text-base-100`"
           >
             <p>VISIT MY GITHUB </p>
             <a
@@ -117,9 +121,11 @@ const Projects = () => {
           target="_blank"
           rel="noreferrer"
           >
-            <img alt="github-link" src={github} className="max-w-[300px] max-h-[300px]" />
+            <img alt="github-link" src={github} />
           </a>
           </div>
+          </motion.div>
+          
         </motion.div>
       </div>
     </section>

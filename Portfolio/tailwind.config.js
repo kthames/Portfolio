@@ -19,9 +19,11 @@ module.exports = {
       backgroundImage: (theme) => ({
         "gradient-rainbow":
           "linear-gradient(90deg, #4f49aa 22%, #8f1be2 56%, #60dba8 94%)",
-
         "gradient-rainblue":
           "linear-gradient(90deg, #8017cb 12%, #5c55c8 37%, #4f81e3 65%, #60dba8 97% )",
+        "bubbles": 
+          "url('/src/assets/bubbles.jpg')"
+
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
