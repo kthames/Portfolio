@@ -5,7 +5,7 @@ import { github } from "../assets";
 
 const SocialMediaIcons = () => {
     return (
-      <div className="flex justify-center md:justify-start gap-7">
+      <div className="flex justify-center gap-7">
         <a
           className="hover:opacity-50 transition duration-500 mt-3"
           href="https://www.linkedin.com/in/katherinemthames/"
