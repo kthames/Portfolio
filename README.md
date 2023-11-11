@@ -1,6 +1,6 @@
 # My Portfolio
 
-[View my portfolio here!]([https://katherinethamesportfolio.netlify.app/])
+[View my portfolio here!](https://katherinethamesportfolio.netlify.app/)
 
 ![Portfolio](./PortfolioSS.png)
 
